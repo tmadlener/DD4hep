@@ -59,11 +59,10 @@ namespace dd4hep {
     float red   = e.hasAttr(_U(r)) ? e.attr<float>(_U(r)) : 1.0f;
     float green = e.hasAttr(_U(g)) ? e.attr<float>(_U(g)) : 1.0f;
     float blue  = e.hasAttr(_U(b)) ? e.attr<float>(_U(b)) : 1.0f;
+    float alpha = e.hasAttr(_U(alpha)) ? e.attr<float>(_U(alpha)) : 1.0f;
 
     printout(DEBUG, "Compact", "++ Converting VisAttr  structure: %s.",attr.name());
-    attr.setColor(red, green, blue);
-    if (e.hasAttr(_U(alpha)))
-      attr.setAlpha(e.attr<float>(_U(alpha)));
+    attr.setColor(alpha, red, green, blue);
     if (e.hasAttr(_U(visible)))
       attr.setVisible(e.attr<bool>(_U(visible)));
     if (e.hasAttr(_U(lineStyle))) {
