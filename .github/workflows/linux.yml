@@ -34,7 +34,7 @@ jobs:
             -DDD4HEP_USE_EDM4HEP=OFF \
             -DDD4HEP_USE_TBB=ON \
             -DDD4HEP_USE_HEPMC3=ON \
-            -DDD4HEP_BUILD_DEBUG=OFF \
+            -DDD4HEP_BUILD_DEBUG=ON \
             -DBUILD_TESTING=ON \
             -DDD4HEP_DEBUG_CMAKE=ON \
             -DDD4HEP_USE_XERCESC=ON \
